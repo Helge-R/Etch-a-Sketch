@@ -1,5 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 256px;
+  margin: 16px 32px;
+}
+
 .square {
-  width: 32px;
-  height: 32px;
+  flex: 1 1 6%;
+  box-sizing: border-box;
   border: 1px solid black;
+  aspect-ratio: 1 / 1;
 }
