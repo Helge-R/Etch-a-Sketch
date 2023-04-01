@@ -5,9 +5,16 @@
 // Get the container
 const container = document.querySelector(".container");
 
+
 // Create 16 divs and add them to container
 for (let i = 0; i < 16 * 16; i++) {
-  let div = document.createElement("div");
-  div.classList.add("square");
-  container.appendChild(div);
+  let square = document.createElement("div");
+  square.addEventListener("mouseenter", changeSquareColor);
+
+  square.classList.add("square");
+  container.appendChild(square);
+}
+
+function changeSquareColor(e) {
+  e.currentTarget.style.backgroundColor = "blue";
 }
