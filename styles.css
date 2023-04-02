@@ -1,19 +1,37 @@
 body {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-creation {
+  /* width: 256px; */
+  padding: 4px 8px;
+  margin: 16px 32px 0 32px;
+}
+
+.center {
+  /* flex: 0 1 0; */
+  flex: 0 1 512px;
+  display: flex;
+  /* flex-direction: column; */
   justify-content: center;
 }
 
-
-.container {
+.grid {
+  flex: 0 1 512px;
   display: flex;
   flex-wrap: wrap;
-  min-width: 256px;
+  
   margin: 16px 32px;
+  aspect-ratio: 1 / 1;
 }
 
 .square {
-  flex: 1 1 6%;
+  flex: 1 1 6.25%;
+  
   box-sizing: border-box;
   border: 1px solid black;
   aspect-ratio: 1 / 1;
 }
+
