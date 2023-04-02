@@ -19,7 +19,8 @@ body {
 }
 
 .grid {
-  flex: 0 1 512px;
+  /* flex: 0 1 512px; */
+  width: 512px;
   display: flex;
   flex-wrap: wrap;
   
